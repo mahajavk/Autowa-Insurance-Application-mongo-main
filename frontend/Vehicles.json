@@ -1,0 +1,27 @@
+[  
+    {  
+      "id": 1,  
+      "name": "Honda City",  
+      "Type": "Car"  
+    },  
+    {  
+      "id": 2,  
+      "name": "Swift",  
+      "Type": "Car"  
+    },  
+    {  
+      "id": 3,  
+      "name": "Hero Honda",  
+      "Type": "Bike"
+    },  
+    {  
+      "id": 4,  
+      "name": "Front Runner",  
+      "Type": "Car"
+    },  
+    {  
+      "id": 5,  
+      "name": "Baleno",  
+      "Type": "Car"
+    }  
+  ]  

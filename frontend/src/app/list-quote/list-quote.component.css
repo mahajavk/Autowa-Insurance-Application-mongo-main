@@ -1,0 +1,54 @@
+.QuoteBg {
+  background-color: white;
+  width: 1030px;
+  margin-left: 10%;
+  box-shadow: 0 0 24px rgb(204 204 204), 0 44px 74px rgb(27 22 66 / 6%);
+}
+
+.QuoteInner {
+  width: 600px;
+  text-align: center;
+  margin-left: 17%;
+}
+
+p {
+  font-family: Lato;
+}
+
+#root {
+  padding: 30px;
+}
+
+.register-form {
+  max-width: 350px;
+  margin: auto;
+}
+
+.userContainer {
+  width: 100%;
+  background-color: #ffeee0;
+  margin-top: 0px;
+  padding: 10px;
+}
+
+.form-group {
+  padding-bottom: 10px;
+}
+
+.toast-container {
+  pointer-events: none !important;
+  position: fixed;
+  z-index: 999999;
+
+}
+
+.toast-top-right {
+  top: 5% !important;
+  right: 20% !important;
+}
+
+.parentQuoteText {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}

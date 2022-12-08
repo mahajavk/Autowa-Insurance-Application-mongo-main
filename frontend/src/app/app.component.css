@@ -1,0 +1,19 @@
+.appNavTop {
+    margin-top: -5px;
+    height: 100px;
+    text-align: center;
+}
+
+.appDiv {
+    width: 100%;
+    background-color: #ffeee0;
+    height: 100px;
+    position: fixed;
+}
+
+.appCallUs {
+    float: right;
+    position: absolute;
+    right: 200px;
+    top: 25px;
+}

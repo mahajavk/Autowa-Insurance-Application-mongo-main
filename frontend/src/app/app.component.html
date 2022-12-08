@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light appNavTop">
+  <div class="collapse navbar-collapse appDiv" id="navbarSupportedContent">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link autoWa" style="margin-left: 90px;">Autowa.</a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link navmenu" *ngIf="isAdminUserIn" routerLink="/home">Home</a>
+      <a class="nav-item nav-link navmenu" *ngIf="isAdminUserIn" routerLink="/about">About Us</a>
+      <a class="nav-item nav-link navmenu" *ngIf="isAdminUserIn" routerLink="/quote">Get Quote</a>
+      <a class="nav-item nav-link navmenu" *ngIf="isAdminUserIn" routerLink="/contact">Contact Us</a>
+      <a class="nav-item nav-link navmenu" *ngIf="isAdminUserIn" routerLink="#"><span class="appCallUs">Need Help? Call
+          us<span class="yellowNav">1800 9876543</span></span></a>
+      <a class="nav-item nav-link navmenu" *ngIf="isAdminUserIn" routerLink="/quotelist">Quote List</a>
+      <a class="nav-item nav-link navmenu" *ngIf="isAdminUserIn" (click)="onLogout()" href="#">LogOut</a>
+      <a class="nav-item nav-link navmenu" *ngIf="!isAdminUserIn" href="#home">Home</a>
+      <a class="nav-item nav-link navmenu" *ngIf="!isAdminUserIn" href="#about">About Us</a>
+      <a class="nav-item nav-link navmenu" *ngIf="!isAdminUserIn" href="#quote">Get Quote</a>
+      <a class="nav-item nav-link navmenu" *ngIf="!isAdminUserIn" href="#contact">Contact Us</a>
+      <a class="nav-item nav-link navmenu" *ngIf="!isAdminUserIn" href="#"><span class="appCallUs">Need Help? Call
+          us<span class="yellowNav">1800 9876543</span></span></a>
+    </div>
+    <div class="navbar-nav">
+    </div>
+  </div>
+
+</nav>
+
+<div *ngIf="isAdminUserIn">
+  <router-outlet></router-outlet>
+</div>
+
+<div *ngIf="!otherUser">
+  <app-login id="login"></app-login>
+  <app-home id="home"></app-home>
+  <app-about id="about"></app-about>
+  <create-quote id="quote"></create-quote>
+  <app-contactus id="contact"></app-contactus>
+</div>
